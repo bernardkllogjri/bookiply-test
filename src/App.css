@@ -1,0 +1,23 @@
+.main__content_loader {
+  font-size: 2rem;
+  color: var(--text-color);
+  pointer-events: none;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .main__content_loader {
+    animation: main__content_loader_float infinite .3s ease-in-out;
+  }
+}
+
+@keyframes main__content_loader_float {
+  100% {
+    transform: rotate(360deg);
+  }
+}

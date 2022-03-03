@@ -1,0 +1,11 @@
+/* .main__container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .main__container {
+    margin: 0;
+  }
+} */

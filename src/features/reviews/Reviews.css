@@ -1,0 +1,71 @@
+.main__content {
+  position: relative;
+  background-color: white;
+  margin: 0 auto;
+  z-index: 2;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 5px;
+  max-width: var(--main-width);
+  min-height: 80vh;
+}
+
+.main__content_title, .main__content_title_filter {
+  color: var(--text-color);
+  padding-top: 3rem;
+}
+
+.header__container_id, .header__container_title {
+  width: var(--main-width);
+  color: white;
+  position: relative;
+  margin: 0 auto;
+  z-index: 2;
+  text-shadow: 0px 4px 6px #000000c4;
+  padding-left: .5rem;
+  padding-right: .5rem;
+}
+
+.header__container_id {
+  margin-top: 20vh;
+}
+
+.header__container_title {
+  margin-bottom: 3rem;
+}
+
+.main__content_title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__content_title_filter {
+  width: 25rem;
+  display: flex;
+  align-items: flex-end;
+}
+
+.main__content_title_filter input[name='query']{
+  margin-left: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+.main__content_title_filter button{
+  margin-left: 1rem;
+  padding: 0.7rem;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  background-color: #0576DB;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color .3s;
+}
+
+.main__content_title_filter button:hover {
+  background-color: #02437c;
+  transition: background-color .3s;
+}
