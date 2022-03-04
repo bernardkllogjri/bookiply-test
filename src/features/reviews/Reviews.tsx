@@ -50,6 +50,7 @@ export const Reviews = () => {
 
   useEffect(() => {
     fetch()
+    // eslint-disable-next-line
   }, [])
 
   return (
@@ -70,7 +71,7 @@ export const Reviews = () => {
             </div>
             <InfiniteScroll
               pageStart={0}
-              loadMore={() => { reviews.status != 'loading' && fetch() }}
+              loadMore={() => { reviews.status !== 'loading' && fetch() }}
               hasMore={reviews.data.length < reviews.totalCount}
               loader={<AiOutlineLoading3Quarters className='main__content_loader' />}
             >
